@@ -1,0 +1,21 @@
+{
+  "name": "FutHub",
+  "version": "1.0.0",
+  "description": "Soccer info website",
+  "main": "server.js",
+  "scripts": {
+    "start" :"node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldoquin/FutHub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldoquin/FutHub/issues"
+  },
+  "homepage": "https://github.com/aldoquin/FutHub#readme"
+}
