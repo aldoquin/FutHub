@@ -4,7 +4,7 @@
   "description": "Soccer info website",
   "main": "server.js",
   "scripts": {
-    "start" :"node server.js",
+    "start": "node server.js",
     "server": "nodemon server.js"
   },
   "repository": {
@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/aldoquin/FutHub/issues"
   },
-  "homepage": "https://github.com/aldoquin/FutHub#readme"
+  "homepage": "https://github.com/aldoquin/FutHub#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  }
 }
