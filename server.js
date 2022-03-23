@@ -3,13 +3,17 @@ const { path } = require('express/lib/application');
 const connectDB = require('./backend/database/db');
 require('dotenv').config();
 const app = express();
+const bp = require('body-parser');
 
 connectDB();
 
 app.get('/', (req, res) => res.json({ msg: 'Welcome to FutHub' }));
+app.use(bp.json());
+app.use(bp.urlencoded({ extended: true }));
 
-app.use('/api/users', require('./backend/routes/users'));
-app.use('/api/auth', require('./backend/routes/auth'));
+app.use('/api/users', require('./backend/routes/usersRoute'));
+app.use('/api/user', require('./backend/routes/usersRoute'));
+app.use(require('./backend/routes/usersRoute'));
 
 const PORT = process.env.PORT || 4000;
 
