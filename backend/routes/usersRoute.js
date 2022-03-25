@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
     });
 });
 
-router.post('/api/login', (req, res) => {
+router.post('/login', (req, res) => {
   User.find({ email: req.body.email })
     .exec()
     .then((user) => {

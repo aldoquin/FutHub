@@ -11,9 +11,8 @@ app.get('/', (req, res) => res.json({ msg: 'Welcome to FutHub' }));
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 
-app.use('/api/users', require('./backend/routes/usersRoute'));
-app.use('/api/user', require('./backend/routes/usersRoute'));
-app.use(require('./backend/routes/usersRoute'));
+app.use('/users', require('./backend/routes/usersRoute'));
+// app.use('/user', require('./backend/routes/usersRoute'));
 
 const PORT = process.env.PORT || 4000;
 
